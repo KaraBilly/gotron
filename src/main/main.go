@@ -24,7 +24,7 @@ func main() {
 	//}
 	//base := os.Getenv("GOPATH")
 
-
+	//test 3
 	cfg, err := goconfig.LoadConfigFile(baseAdr +"conf.ini")
 	if err != nil{
 		panic("错误")
