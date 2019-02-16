@@ -3,15 +3,17 @@ package main
 import (
 	"database/sql"
 	"github.com/Unknwon/goconfig"
-	_ "mssql"
-	_ "github.com/go-sql-driver/mysql"
+	//_ "github.com/go-sql-driver/mysql"
+	_ "github.com/denisenkom/go-mssqldb"
 	"log"
 )
 
 const baseAdr = "d:\\GoWorkspace\\gotron\\src\\config\\"
-func init(){
-	 //baseAdr = os.Getenv("GOPATH")
+
+func init() {
+	//baseAdr = os.Getenv("GOPATH")
 }
+
 //const OneSecond = 1*time.Second + 10*time.Millisecond
 func main() {
 	/*c := cron.New()
@@ -25,8 +27,8 @@ func main() {
 	//base := os.Getenv("GOPATH")
 
 	//test 5
-	cfg, err := goconfig.LoadConfigFile(baseAdr +"conf.ini")
-	if err != nil{
+	cfg, err := goconfig.LoadConfigFile(baseAdr + "conf.ini")
+	if err != nil {
 		panic("错误")
 		//fmt.Println(e)
 	}
@@ -36,7 +38,7 @@ func main() {
 	dbName,err:=cfg.GetValue("mysql", "gocron")
 	path := strings.Join([]string{userName, ":", passWord, "@tcp(",url,")/", dbName, "?charset=utf8"}, "")*/
 	//valut, err := cfg.Int("must", int)
-	path,err:=cfg.GetValue("mssql","basket")
+	path, err := cfg.GetValue("mssql", "basket")
 	conn, err := sql.Open("mssql", path)
 	if err != nil {
 		log.Fatal("Open connection failed:", err.Error())
