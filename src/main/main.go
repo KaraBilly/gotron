@@ -3,6 +3,8 @@ package main
 import (
 	"database/sql"
 	"github.com/Unknwon/goconfig"
+	"gotron/src/nosqlReader"
+
 	//_ "github.com/go-sql-driver/mysql"
 	_ "github.com/denisenkom/go-mssqldb"
 	"log"
@@ -25,7 +27,8 @@ func main() {
 
 	//}
 	//base := os.Getenv("GOPATH")
-
+	nosqlReader.GetOne()
+	nosqlReader.GetMany()
 	//test 5
 	cfg, err := goconfig.LoadConfigFile(baseAdr + "conf.ini")
 	if err != nil {
