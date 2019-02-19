@@ -4,7 +4,7 @@ require (
 	cloud.google.com/go v0.36.0 // indirect
 	github.com/Unknwon/goconfig v0.0.0-20181105214110-56bd8ab18619
 	github.com/denisenkom/go-mssqldb v0.0.0-20190204142019-df6d76eb9289
-	github.com/go-sql-driver/mysql v1.4.1
+	github.com/go-sql-driver/mysql v1.4.1 // indirect
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/crypto v0.0.0-20190211182817-74369b46fc67 // indirect
 	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db // indirect

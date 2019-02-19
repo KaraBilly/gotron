@@ -1,0 +1,56 @@
+# cloud.google.com/go v0.36.0
+cloud.google.com/go/civil
+# github.com/Unknwon/goconfig v0.0.0-20181105214110-56bd8ab18619
+github.com/Unknwon/goconfig
+# github.com/denisenkom/go-mssqldb v0.0.0-20190204142019-df6d76eb9289
+github.com/denisenkom/go-mssqldb
+github.com/denisenkom/go-mssqldb/internal/cp
+# github.com/go-stack/stack v1.8.0
+github.com/go-stack/stack
+# github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db
+github.com/golang/snappy
+# github.com/google/uuid v1.1.0
+github.com/google/uuid
+# github.com/mongodb/mongo-go-driver v0.3.0
+github.com/mongodb/mongo-go-driver/bson
+github.com/mongodb/mongo-go-driver/mongo
+github.com/mongodb/mongo-go-driver/bson/bsoncodec
+github.com/mongodb/mongo-go-driver/bson/bsonrw
+github.com/mongodb/mongo-go-driver/bson/bsontype
+github.com/mongodb/mongo-go-driver/bson/primitive
+github.com/mongodb/mongo-go-driver/x/bsonx/bsoncore
+github.com/mongodb/mongo-go-driver/mongo/options
+github.com/mongodb/mongo-go-driver/mongo/readconcern
+github.com/mongodb/mongo-go-driver/mongo/readpref
+github.com/mongodb/mongo-go-driver/mongo/writeconcern
+github.com/mongodb/mongo-go-driver/tag
+github.com/mongodb/mongo-go-driver/x/bsonx
+github.com/mongodb/mongo-go-driver/x/mongo/driver
+github.com/mongodb/mongo-go-driver/x/mongo/driver/session
+github.com/mongodb/mongo-go-driver/x/mongo/driver/topology
+github.com/mongodb/mongo-go-driver/x/mongo/driver/uuid
+github.com/mongodb/mongo-go-driver/x/network/command
+github.com/mongodb/mongo-go-driver/x/network/connstring
+github.com/mongodb/mongo-go-driver/x/network/description
+github.com/mongodb/mongo-go-driver/x/network/result
+github.com/mongodb/mongo-go-driver/event
+github.com/mongodb/mongo-go-driver/x/network/connection
+github.com/mongodb/mongo-go-driver/x/network/wiremessage
+github.com/mongodb/mongo-go-driver/x/mongo/driver/auth
+github.com/mongodb/mongo-go-driver/x/network/address
+github.com/mongodb/mongo-go-driver/x/network/compressor
+github.com/mongodb/mongo-go-driver/version
+github.com/mongodb/mongo-go-driver/internal
+github.com/mongodb/mongo-go-driver/x/mongo/driver/auth/internal/gssapi
+# github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c
+github.com/xdg/scram
+# github.com/xdg/stringprep v1.0.0
+github.com/xdg/stringprep
+# golang.org/x/crypto v0.0.0-20190211182817-74369b46fc67
+golang.org/x/crypto/md4
+golang.org/x/crypto/pbkdf2
+# golang.org/x/sync v0.0.0-20181221193216-37e7f081c4d4
+golang.org/x/sync/semaphore
+# golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2
+golang.org/x/text/unicode/norm
+golang.org/x/text/transform
