@@ -5,8 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/Unknwon/goconfig"
+	_ "github.com/denisenkom/go-mssqldb"
 	"gotron/src/apiCall"
-	"gotron/src/nosqlReader"
+	"gotron/src/sqlReader"
 	"log"
 )
 
@@ -27,6 +28,7 @@ func main() {
 
 	//}
 	//base := os.Getenv("GOPATH")
+	sqlReader.SPRun()
 	point := apiCall.Get()
 	data, err := json.MarshalIndent(point, "", "   ")
 	if err != nil {
@@ -34,8 +36,8 @@ func main() {
 	}
 	fmt.Printf("%s\n", data)
 
-	nosqlReader.GetOne()
-	nosqlReader.GetMany()
+	//nosqlReader.GetOne()
+	//nosqlReader.GetMany()
 	//test 5
 	cfg, err := goconfig.LoadConfigFile(baseAdr + "conf.ini")
 	if err != nil {
