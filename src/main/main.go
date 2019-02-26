@@ -2,11 +2,11 @@ package main
 
 import (
 	"database/sql"
+	"encoding/json"
+	"fmt"
 	"github.com/Unknwon/goconfig"
+	"gotron/src/apiCall"
 	"gotron/src/nosqlReader"
-
-	//_ "github.com/go-sql-driver/mysql"
-	_ "github.com/denisenkom/go-mssqldb"
 	"log"
 )
 
@@ -27,6 +27,13 @@ func main() {
 
 	//}
 	//base := os.Getenv("GOPATH")
+	point := apiCall.Get()
+	data, err := json.MarshalIndent(point, "", "   ")
+	if err != nil {
+		log.Fatal("jsonMarshalIndent failed", err.Error())
+	}
+	fmt.Printf("%s\n", data)
+
 	nosqlReader.GetOne()
 	nosqlReader.GetMany()
 	//test 5
@@ -39,8 +46,8 @@ func main() {
 	passWord,err:=cfg.GetValue("mysql", "password")
 	url,err:=cfg.GetValue("mysql", "url")
 	dbName,err:=cfg.GetValue("mysql", "gocron")
-	path := strings.Join([]string{userName, ":", passWord, "@tcp(",url,")/", dbName, "?charset=utf8"}, "")*/
-	//valut, err := cfg.Int("must", int)
+	path := strings.Join([]string{userName, ":", passWord, "@tcp(",url,")/", dbName, "?charset=utf8"}, "")
+	//valut, err := cfg.Int("must", int)*/
 	path, err := cfg.GetValue("mssql", "basket")
 	conn, err := sql.Open("mssql", path)
 	if err != nil {
@@ -48,4 +55,5 @@ func main() {
 	}
 	defer conn.Close()
 	//fmt.Println(value)
+
 }

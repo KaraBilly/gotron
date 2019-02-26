@@ -13,6 +13,7 @@ require (
 	github.com/jtolds/gls v4.2.1+incompatible // indirect
 	github.com/mongodb/mongo-go-driver v0.3.0
 	github.com/satori/go.uuid v1.2.0 // indirect
+	github.com/shopspring/decimal v0.0.0-20180709203117-cd690d0c9e24
 	github.com/smartystreets/assertions v0.0.0-20190116191733-b6c0e53d7304 // indirect
 	github.com/smartystreets/goconvey v0.0.0-20181108003508-044398e4856c // indirect
 	github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c // indirect
